@@ -15,59 +15,56 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
   font-family: "Outfit";
   background-color: var(--primary-bg-color);
 }
-.content {
+main {
   flex: 1;
   display: flex;
   align-items: center;
 }
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  height: auto;
-  padding: 15px 15px;
-  margin: 30px 30px;
-  border-radius: 15px;
+  display: block;
+  max-width: 18.75rem;
+  padding: 0.938rem 0.938rem;
+  margin: 1.875rem 1.875rem;
+  border-radius: 0.938rem;
   background-color: var(--primary-wrapper-color);
-  box-shadow: 0 0 12px var(--primary-box-shadow);
+  box-shadow: 0 0 0.75rem var(--primary-box-shadow);
 }
-.wrapper .code {
+.wrapper .qr-image {
   aspect-ratio: 1/1;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
-.wrapper .code > img {
+.wrapper .qr-image > img {
   object-fit: cover;
-  width: 100%;
+  max-width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 
 .wrapper .text {
   text-align: center;
-  padding: 2px 14px;
+  margin: 0.125rem 0.875rem;
 }
 .wrapper h1 {
   color: var(--primary-title-color);
-  font-size: 22px;
   font-weight: 700;
+  font-size: 1.375rem;
 }
 .wrapper p {
   color: var(--primary-subtitle-color);
-  font-size: 16px;
   font-weight: 400;
+  font-size: 0.938rem;
 }
 
-.attribution {
-  margin-top: 20px;
-  font-size: 11px;
+footer {
+  margin-top: 1.25rem;
+  font-size: 0.688rem;
   text-align: center;
 }
-.attribution a {
+footer a {
   color: var(--primary-link-color);
 }
